@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>What is the DOM</title>
+    <style>
+        .dom-image {
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WHAT IS THE DOM??</h1>
+    <section id="content">
+        <p id="main-text">Words about things...</p>
+        <img class="dom-image" src="images/html-dom-tree.png" alt="HTML DOM TREE IMAGE">
+    </section>
+    
+    
+    <script>
+        debugger;
+        let p = document.getElementById("main-text");
+        p.append("More words about things");
+        console.log(p.innerHTML);
+    </script>
+</body>
+
+</html>
